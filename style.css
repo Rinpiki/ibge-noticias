@@ -11,10 +11,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to right, #183114, #446129);
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1300px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -51,14 +53,14 @@ li:first-child {
   margin-right: 20px;
 }
 .img-section1 img {
-  width: 600px;
+  max-width: 600px;
   height: 350px;
 }
 
 .section-principal {
   display: flex;
   justify-content: space-between;
-  padding: 60px 50px;
+  padding: 60px 40px;
   background-image: linear-gradient(to right, #183114, #446129);
 }
 .textos {
@@ -66,13 +68,13 @@ li:first-child {
 .section-principal .textos h2 {
   color: #fcee21;
   font-weight: 700;
-  font-size: 40px;
+  font-size: min(40px, 4vw);
   margin-bottom: 20px;
 }
 
 .section-principal .textos span {
   font-weight: 400;
-  font-size: 20px;
+  font-size: min(30px, 2vw);
   display: flex;
   color: #ffff;
 }
