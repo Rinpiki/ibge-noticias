@@ -22,6 +22,7 @@ body {
 }
 
 header {
+  max-width: 100vw;
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to right, #183114, #446129);
@@ -58,7 +59,7 @@ li:first-child {
 
 .section-principal {
   display: flex;
-  max-width: 100%;
+  max-width: 100vw;
   justify-content: space-between;
   padding: 60px 40px;
   background-image: linear-gradient(to right, #183114, #446129);
@@ -110,5 +111,10 @@ li:first-child {
   .section-principal {
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .img-section1 img {
+    max-width: 300px;
+    height: 150px;
   }
 }
