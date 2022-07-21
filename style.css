@@ -12,7 +12,6 @@ body {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, #183114, #446129);
-  overflow-x: hidden;
 }
 
 .container {
@@ -59,6 +58,7 @@ li:first-child {
 
 .section-principal {
   display: flex;
+  max-width: 100%;
   justify-content: space-between;
   padding: 60px 40px;
   background-image: linear-gradient(to right, #183114, #446129);
@@ -88,4 +88,27 @@ li:first-child {
   font-size: 25px;
   font-weight: 500;
   margin-top: 20px;
+}
+
+@media (max-width: 925px) {
+  .img-section1 img {
+    max-width: 400px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 830px) {
+  .newsl {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 561px) {
+  .section-principal {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
