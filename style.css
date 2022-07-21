@@ -121,7 +121,7 @@ li:first-child {
     font-size: 25px;
   }
   li {
-    font-size: 10px;
+    font-size: 15px;
   }
   header {
     padding: 20px 40px;
@@ -130,13 +130,13 @@ li:first-child {
   .section-principal .textos h2 {
     color: #fcee21;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 10px;
   }
 
   .section-principal .textos span {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     display: flex;
     color: #ffff;
   }
