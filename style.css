@@ -47,11 +47,17 @@ li {
   font-size: 20px;
   line-height: 30px;
   color: #ffff;
+  cursor: pointer;
 }
 
 li:first-child {
   margin-right: 20px;
 }
+
+li:hover {
+  color: #fcee21;
+}
+
 .img-section1 img {
   max-width: 600px;
   height: 350px;
@@ -64,8 +70,7 @@ li:first-child {
   padding: 60px 40px;
   background-image: linear-gradient(to right, #183114, #446129);
 }
-.textos {
-}
+
 .section-principal .textos h2 {
   color: #fcee21;
   font-weight: 700;
@@ -89,6 +94,17 @@ li:first-child {
   font-size: 25px;
   font-weight: 500;
   margin-top: 20px;
+  cursor: pointer;
+  border: #fcee21 1px solid;
+  transition: 0.3s;
+}
+
+.newsl:hover {
+  background: none;
+  color: #fcee21;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 @media (max-width: 925px) {
