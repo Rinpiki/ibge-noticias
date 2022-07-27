@@ -151,16 +151,22 @@ li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-overflow: ellipsis;
 }
 
 .titulo-card {
   color: #183114;
   margin-top: 0px;
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.text-card {
+.texto-card {
   color: #446129;
+  height: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .data-card {
