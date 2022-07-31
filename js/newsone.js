@@ -22,7 +22,7 @@ export default async function ibgeApi() {
     const card = document.createElement('div');
     card.innerHTML = `<div class="cards">
           <div class="img-card">
-            <img src="${imagemFinal}" alt="" />
+            <img src="img/pessoa.png" alt="" />
           </div>
           <div class="card-texto-container">
             <h3 class="titulo-card">
