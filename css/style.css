@@ -223,4 +223,7 @@ li:hover {
     display: flex;
     color: #ffff;
   }
+  .cards {
+    margin-right: 0px;
+  }
 }
