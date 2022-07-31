@@ -16,7 +16,7 @@ export default async function ibgeApi() {
   console.log(img);
 
   todasNot.forEach((items) => {
-    const notfeitas = items.titulo;
+    const notfeitas = items.titulo.slice(0, 70) + '...';
     const introducao = items.introducao.slice(0, 110) + '...';
     const data_publicacao = items.data_publicacao.slice(0, 10);
     const card = document.createElement('div');
