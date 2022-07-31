@@ -15,6 +15,7 @@ export default async function ibgeApi() {
     'img/economicasInvestimentos.svg',
     'img/economicasPizza.svg',
     'img/economicasProjeção.svg',
+    'img/economicasVisual.svg',
   ];
 
   const capaSociais = [
