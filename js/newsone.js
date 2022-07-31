@@ -1,8 +1,8 @@
 export default async function ibgeApi() {
   const dados = await fetch(
-    'http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release'
+    'https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release'
   );
-  const link = 'http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release';
+  const link = 'https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release';
   const ibge = await dados.json();
   console.log(ibge);
   const notA = ibge.items[0];
