@@ -18,10 +18,12 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  border: #fcee21 solid 2px;
+  background-image: linear-gradient(to right, #183114, #446129);
 }
 
 header {
-  max-width: 1300px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to right, #183114, #446129);
@@ -65,7 +67,7 @@ li:hover {
 
 .section-principal {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   justify-content: space-between;
   padding: 60px 20px 60px 40px;
   background-image: linear-gradient(to right, #183114, #446129);
@@ -175,10 +177,111 @@ li:hover {
   margin-left: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 925px) {
+
+.section-terceira {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  border: #fcee21 solid 2px;
+}
+
+.cardnews {
+  background: linear-gradient(to right, #183114, #446129);
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #f3f4d3 2px solid;
+  flex-direction: column;
+}
+
+.container-cardnews {
+  display: flex;
+  height: 250px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.cardnews-img img {
+  width: clamp(150px, 30vw, 260px);
+  height: 250px;
+  margin-right: 10px;
+}
+
+.cardnews-texto h2 {
+  color: #fcee21;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: clamp(1.5rem, 2.7vw, 32px);
+}
+
+.cardnews-texto h4 {
+  font-size: clamp(1rem, 2vw, 27px);
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  color: #dcde9f;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 20px auto;
+  position: relative;
+}
+
+.input {
+  width: 350px;
+  height: 35px;
+  border: 2px solid #fcee21;
+  color: #fcee21;
+  border-radius: 20px;
+  background: transparent;
+  font-size: 20px;
+  padding: 15px;
+  outline: none;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 35px;
+  border: #fcee21 solid 2px;
+  background: #fcee21;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #183114;
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1131px) {
+}
+
+@media (max-width: 957px) {
   .img-section1 img {
-    max-width: 500px;
+    width: 350px;
     height: 250px;
+  }
+
+  .container-cardnews img {
+    width: 200px;
   }
 }
 
@@ -189,6 +292,9 @@ li:hover {
     font-size: 15px;
     font-weight: 500;
   }
+}
+
+@media (max-width: 690px) {
 }
 
 @media (max-width: 561px) {
