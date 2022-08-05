@@ -204,7 +204,7 @@ li:hover {
 
 .container-cardnews {
   display: flex;
-  height: 250px;
+  height: 240px;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -240,7 +240,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px auto 20px auto;
+  margin: 10px auto 10px auto;
   position: relative;
 }
 
@@ -252,7 +252,7 @@ form {
   border-radius: 20px;
   background: transparent;
   font-size: 20px;
-  padding: 15px;
+  padding: 10px;
   outline: none;
 }
 
@@ -260,14 +260,13 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 35px;
+  padding: 0px 30px;
   border: #fcee21 solid 2px;
   background: #fcee21;
-  border-radius: 20px;
+  border-radius: 50px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 17px;
+  line-height: 30px;
   color: #183114;
   position: absolute;
   right: 0;
@@ -278,8 +277,8 @@ form {
 
 @media (max-width: 957px) {
   .img-section1 img {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 
   .container-cardnews img {
@@ -294,29 +293,116 @@ form {
     font-size: 15px;
     font-weight: 500;
   }
+
+  .input {
+    width: 250px;
+  }
+
+  .container-cardnews {
+    padding: 15px 15px 0px 15px;
+  }
 }
 
 @media (max-width: 700px) {
   .cardnews-img .news-img {
-    max-width: 180px;
-    max-height: 170px;
+    max-width: 200px;
+    max-height: 130px;
     width: auto;
     height: auto;
   }
 
   .cardnews-img {
-    width: 40px;
     height: 100px;
-    margin-right: 120px;
   }
 
   .input {
     width: 250px;
-    height: 35px;
+    height: 20px;
+    padding: 12px;
+  }
+
+  .submit {
+    padding: 3px 30px;
+    line-height: 16px;
+    font-size: 13px;
   }
 
   form {
-    margin: 0px auto 20px auto;
+    margin: 0px auto 10px auto;
+  }
+
+  .cardnews-texto h2 {
+    color: #fcee21;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .cardnews-texto h4 {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    color: #dcde9f;
+  }
+  .container-cardnews {
+    height: 200px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .cardnews-texto h2 {
+    color: #fcee21;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+
+  .cardnews-texto h4 {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    color: #dcde9f;
+  }
+
+  form {
+    height: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .input {
+    width: 220px;
+    height: 20px;
+    padding: 12px;
+  }
+
+  .submit {
+    padding: 3px 30px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 584px) {
+  .cardnews-texto h2 {
+    color: #fcee21;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+
+  .cardnews-texto h4 {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    color: #dcde9f;
   }
 }
 
@@ -360,8 +446,97 @@ form {
   .cardnews {
     width: 80%;
   }
+
+  .container-cardnews {
+    height: 155px;
+  }
+
+  .cardnews-texto h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .cardnews-texto h4 {
+    line-height: 14px;
+  }
 }
 
+@media (max-width: 480px) {
+  .cardnews-img {
+    width: 118px;
+    height: 118px;
+    margin-right: 28px;
+  }
+
+  .news-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .input {
+    width: 160px;
+    height: 20px;
+    padding: 10px;
+  }
+
+  .submit {
+    padding: 2px 18px;
+    line-height: 16px;
+    font-size: 10px;
+  }
+
+  .cardnews-texto h2 {
+    color: #fcee21;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+
+  .cardnews-texto h4 {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    line-height: 14px;
+    color: #dcde9f;
+  }
+}
+
+@media (max-width: 395px) {
+  .cardnews {
+    width: 87%;
+  }
+  .cardnews-texto h2 {
+    color: #fcee21;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .cardnews-texto h4 {
+    font-size: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    line-height: 10px;
+    color: #dcde9f;
+  }
+
+  .cardnews-img {
+    max-width: 118px;
+    max-height: 118px;
+    margin-right: 28px;
+  }
+
+  .news-img {
+    max-width: 20%;
+    max-height: 50%;
+  }
+}
 @media (max-width: 325px) {
   .img-section1 img {
     max-width: 312px;
