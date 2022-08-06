@@ -34,16 +34,16 @@ export default async function ibgeApi() {
     const data_publicacao = items.data_publicacao.slice(0, 10);
     if (items.editorias == 'economicas') {
       const numeroAleatorio = (Math.random() * 5).toFixed(0);
-      console.log(numeroAleatorio);
+      const links = items.link;
       const card = document.createElement('div');
       card.innerHTML = `<div class="cards">
           <div class="img-card">
             <img src="${capaEconomicas[numeroAleatorio]}" alt="" />
           </div>
           <div class="card-texto-container">
-            <h3 class="titulo-card">
+            <a href=${links}><h3 class="titulo-card">
               ${notfeitas}
-            </h3>
+            </h3></a>
             <p class="texto-card">
               ${introducao}
             </p>
@@ -57,15 +57,16 @@ export default async function ibgeApi() {
     } else {
       const numeroAleatorio = (Math.random() * 5).toFixed(0);
       console.log(numeroAleatorio);
+      const links = items.link;
       const card = document.createElement('div');
       card.innerHTML = `<div class="cards">
           <div class="img-card">
             <img src="${capaSociais[numeroAleatorio]}" alt="" />
           </div>
           <div class="card-texto-container">
-            <h3 class="titulo-card">
+            <a href=${links}><h3 class="titulo-card">
               ${notfeitas}
-            </h3>
+            </h3></a>
             <p class="texto-card">
               ${introducao}
             </p>
