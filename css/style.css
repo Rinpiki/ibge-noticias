@@ -18,7 +18,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  border: #fcee21 solid 2px;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to right, #183114, #446129);
@@ -236,7 +235,6 @@ li:hover {
   margin-left: auto;
   margin-right: auto;
   justify-self: center;
-  border: #fcee21 solid 2px;
 }
 
 .cardnews {
