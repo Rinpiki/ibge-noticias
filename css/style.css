@@ -110,10 +110,26 @@ li:hover {
 
 .section-segundaria {
   display: flex;
+  max-width: 870px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 20px auto;
+}
+
+.btn-newpage {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.btn-newpage h2 {
+  background: #ffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 20px;
 }
 
 .cards {
@@ -124,6 +140,7 @@ li:hover {
   background: #f3f4d3;
   border-radius: 15px;
   margin-bottom: 20px;
+  margin-top: 20px;
   margin-right: 20px;
   overflow: hidden;
   transition: 0.3s;
@@ -286,6 +303,22 @@ form {
   }
 }
 
+@media (max-width: 873px) {
+  .btn-newpage {
+    width: 577px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .btn-newpage h2 {
+    background: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 830px) {
   .newsl {
     padding: 10px 25px;
@@ -385,6 +418,22 @@ form {
     padding: 3px 30px;
     line-height: 16px;
     font-size: 13px;
+  }
+}
+
+@media (max-width: 883px) {
+  .btn-newpage {
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .btn-newpage h2 {
+    background: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
   }
 }
 
