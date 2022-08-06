@@ -95,6 +95,7 @@ li:hover {
   font-size: 25px;
   font-weight: 500;
   margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
   border: #fcee21 3px solid;
   transition: 0.3s;
@@ -443,6 +444,7 @@ form {
     width: 220px;
     height: 20px;
     padding: 12px;
+    font-size: 16px;
   }
 
   .submit {
@@ -592,6 +594,7 @@ form {
     width: 160px;
     height: 20px;
     padding: 10px;
+    font-size: 12px;
   }
 
   .submit {
