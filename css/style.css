@@ -133,6 +133,34 @@ li:hover {
   cursor: pointer;
 }
 
+.cards-Loading {
+  animation: pulso 0.3s ease-in alternate infinite;
+  width: 270px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.loading-img {
+  background: #b2b4b6;
+  width: 100%;
+  height: 200px;
+}
+
+@keyframes pulso {
+  to {
+    opacity: 0.35;
+  }
+}
+
 .cards {
   width: 270px;
   height: 430px;

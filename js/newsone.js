@@ -5,6 +5,7 @@ export default async function ibgeApi() {
 
   const ibge = await dados.json();
   console.log(ibge);
+  const cards = document.querySelectorAll('.cards-Loading');
   const notA = ibge.items[0];
   const notB = ibge.items[1];
   const notC = ibge.items[2];
@@ -50,6 +51,9 @@ export default async function ibgeApi() {
           <span class="data-card">${data_publicacao}</span>
         </div>`;
       document.querySelector('.section-segundaria').appendChild(card);
+      cards.forEach((cards) => {
+        cards.style.display = 'none';
+      });
     } else {
       const numeroAleatorio = (Math.random() * 5).toFixed(0);
       console.log(numeroAleatorio);
@@ -69,6 +73,9 @@ export default async function ibgeApi() {
           <span class="data-card">${data_publicacao}</span>
         </div>`;
       document.querySelector('.section-segundaria').appendChild(card);
+      cards.forEach((cards) => {
+        cards.style.display = 'none';
+      });
     }
   });
 }
