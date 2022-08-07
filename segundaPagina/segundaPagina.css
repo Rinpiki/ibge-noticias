@@ -14,9 +14,9 @@ body {
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
-  width: 90%;
+  width: 95%;
   height: 90vh;
   background: #ffff;
   border-radius: 20px;
@@ -85,9 +85,6 @@ li {
   overflow-y: auto;
 }
 
-.grid {
-}
-
 .card {
   display: flex;
   align-items: center;
@@ -127,4 +124,41 @@ a {
   color: #010001;
   font-size: 22px;
   font-weight: 600;
+}
+
+@media (max-width: 570px) {
+  li {
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #d4d6e7;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .card {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  li {
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 3px;
+    background: #d4d6e7;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 }
