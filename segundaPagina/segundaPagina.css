@@ -89,9 +89,42 @@ li {
 }
 
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 200px;
   border-radius: 10px;
-
   background: #f1f0f1;
+}
+
+.card-cc {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  display: flex;
+  align-content: center;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #5a5b5b;
+}
+
+span::before {
+  content: '  ';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: #dec020;
+}
+a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #010001;
+  font-size: 22px;
+  font-weight: 600;
 }
