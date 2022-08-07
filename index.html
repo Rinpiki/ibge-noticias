@@ -15,8 +15,8 @@
       <header>
         <h1 class="header">Notícias</h1>
         <ul>
-          <li>Sobre</li>
-          <li>Newsletter</li>
+          <li><a class="link-interno" href="#newslatter">Sobre</a></li>
+          <li><a class="link-interno" href="#newslatter">Newsletter</a></li>
         </ul>
       </header>
       <section class="section-principal">
@@ -29,14 +29,16 @@
             for free! Join our Newsletter and get alerted when new articles,
             topics or courses are published.</span
           >
-          <button class="newsl">Newsletter</button>
+          <button class="newsl"><a href="#newslatter">Newsletter</a></button>
         </div>
         <div class="img-section1"><img src="img/pessoa.png" /></div>
       </section>
 
       <section class="section-segundaria">
         <div class="btn-newpage">
-          <h2>Mais</h2>
+          <a href="https://www.youtube.com/watch?v=oDM-x15KPOY"
+            ><h2>Mais</h2></a
+          >
         </div>
         <div class="cards-Loading">
           <div class="loading-img"></div>
@@ -63,13 +65,13 @@
               </h4>
             </div>
           </div>
-          <form action="#">
+          <form action="#" id="newslatter">
             <input type="email" id="email" name="email" class="input" />
             <input type="submit" value="Enviar" class="submit" />
           </form>
         </div>
       </section>
-      <footer>
+      <footer id="footer">
         <div>
           <img src="img/svg footer/linkedin.svg" alt="svgLinkedin" />
           <img src="img/svg footer/github.svg" alt="svgGithub" />
