@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   width: 95%;
   height: 90vh;
@@ -53,6 +53,7 @@ li {
   border-radius: 10px;
   font-weight: 600;
   color: white;
+  cursor: pointer;
 }
 
 .tags {
@@ -78,7 +79,7 @@ li {
   border-radius: 0px 0px 20px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 5px;
+  grid-gap: 10px;
   padding: 10px;
   align-items: center;
   justify-items: center;
@@ -117,6 +118,15 @@ span::before {
   border-radius: 50%;
   margin-right: 5px;
   background: #dec020;
+}
+.social::before {
+  content: '  ';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: #dc1b54;
 }
 a {
   margin-bottom: 10px;
